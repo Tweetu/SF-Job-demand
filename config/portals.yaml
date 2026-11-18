@@ -1,0 +1,217 @@
+# Job portals checked weekly with a headless browser (Playwright).
+# Only search-result COUNTS are collected (plus company names from embedded schema.org data
+# for discovery). LinkedIn, Indeed, Glassdoor, Upwork are deliberately excluded (ToS / blocking).
+#
+# URL placeholders: {q} = URL-encoded query, {slug} = query as "salesforce-health-cloud"
+# fresh_url: same search limited to the last ~7 days (used for the "freshness" ranking). Optional.
+# count_regex: regexes tried in order on the visible page text; first capture group = number.
+# If a portal returns no count, it is flagged in the weekly report (no action needed unless it persists).
+
+queries:
+  - Salesforce
+  - Salesforce Financial Services Cloud
+  - Salesforce Health Cloud
+  - Salesforce Life Sciences Cloud
+  - Salesforce Manufacturing Cloud
+  - Salesforce Consumer Goods Cloud
+  - Salesforce Communications Cloud
+  - Salesforce Energy Utilities Cloud
+  - Salesforce Public Sector
+  - Salesforce Nonprofit Cloud
+  - Salesforce Education Cloud
+  - Salesforce Insurance
+  - OmniStudio
+  - Vlocity
+  - Salesforce Data Cloud
+  - Agentforce
+  - Salesforce Marketing Cloud
+  - Salesforce Commerce Cloud
+  - Salesforce Service Cloud
+  - Salesforce Sales Cloud
+  - Salesforce CPQ
+  - Salesforce Experience Cloud
+  - MuleSoft
+
+# Generic fallbacks if a portal-specific regex fails
+generic_count_regex:
+  - '([\d][\d,\.\s]{0,9})\s+(?:jobs?|results?|vacancies|openings|positions|Stellen(?:angebote)?|Jobs|offres|empleos)\b'
+  - '(?:of|von|sur)\s+([\d][\d,\.]{0,9})\s+(?:jobs?|results?|Jobs|Stellen)'
+
+portals:
+  # ---------------- Aggregators (multi-country) ----------------
+  - id: jooble
+    name: Jooble
+    sites:
+      United States: {url: 'https://jooble.org/SearchResult?ukw={q}'}
+      India: {url: 'https://in.jooble.org/SearchResult?ukw={q}'}
+      United Kingdom: {url: 'https://uk.jooble.org/SearchResult?ukw={q}'}
+      Australia: {url: 'https://au.jooble.org/SearchResult?ukw={q}'}
+      Germany: {url: 'https://de.jooble.org/SearchResult?ukw={q}'}
+      Canada: {url: 'https://ca.jooble.org/SearchResult?ukw={q}'}
+      United Arab Emirates: {url: 'https://ae.jooble.org/SearchResult?ukw={q}'}
+      Singapore: {url: 'https://sg.jooble.org/SearchResult?ukw={q}'}
+      France: {url: 'https://fr.jooble.org/SearchResult?ukw={q}'}
+      Netherlands: {url: 'https://nl.jooble.org/SearchResult?ukw={q}'}
+    fresh_param: '&date=3'
+    count_regex: ['([\d][\d,\.\s]{0,9})\s+(?:jobs?|vacancies|Jobs|Stellen|offres|vacatures)']
+
+  - id: careerjet
+    name: Careerjet
+    sites:
+      United States: {url: 'https://www.careerjet.com/jobs?s={q}&l=USA'}
+      United Kingdom: {url: 'https://www.careerjet.co.uk/jobs?s={q}'}
+      India: {url: 'https://www.careerjet.co.in/jobs?s={q}'}
+      Australia: {url: 'https://www.careerjet.com.au/jobs?s={q}'}
+      Canada: {url: 'https://www.careerjet.ca/jobs?s={q}'}
+      Germany: {url: 'https://www.careerjet.de/jobs?s={q}'}
+      Singapore: {url: 'https://www.careerjet.sg/jobs?s={q}'}
+    fresh_param: '&nw=1'
+    count_regex: ['([\d][\d,\.\s]{0,9})\s+(?:jobs?|Jobs|offres)']
+
+  - id: adzuna_site
+    name: Adzuna (website)
+    sites:
+      United States: {url: 'https://www.adzuna.com/search?q={q}'}
+      United Kingdom: {url: 'https://www.adzuna.co.uk/search?q={q}'}
+      India: {url: 'https://www.adzuna.in/search?q={q}'}
+      Australia: {url: 'https://www.adzuna.com.au/search?q={q}'}
+      Canada: {url: 'https://www.adzuna.ca/search?q={q}'}
+      Germany: {url: 'https://www.adzuna.de/search?q={q}'}
+      Singapore: {url: 'https://www.adzuna.sg/search?q={q}'}
+      Netherlands: {url: 'https://www.adzuna.nl/search?q={q}'}
+      France: {url: 'https://www.adzuna.fr/search?q={q}'}
+    fresh_param: '&days_old=7'
+    count_regex: ['([\d][\d,\.\s]{0,9})\s+(?:jobs?|Jobs|offres|vacatures)']
+
+  # ---------------- Regional / national boards ----------------
+  - id: naukri
+    name: Naukri
+    sites:
+      India: {url: 'https://www.naukri.com/{slug}-jobs?k={q}'}
+    fresh_param: '&jobAge=7'
+    count_regex: ['of\s+([\d,]+)\s*(?:jobs)?', '([\d,]+)\s+jobs']
+
+  - id: foundit
+    name: Foundit
+    sites:
+      India: {url: 'https://www.foundit.in/srp/results?query={q}'}
+    fresh_param: '&jobFreshness=7'
+    count_regex: ['([\d,]+)\s+(?:jobs?|results?)']
+
+  - id: dice
+    name: Dice
+    sites:
+      United States: {url: 'https://www.dice.com/jobs?q={q}&countryCode=US'}
+    fresh_param: '&filters.postedDate=SEVEN'
+    count_regex: ['([\d,]+)\s+results?', 'of\s+([\d,]+)']
+
+  - id: builtin
+    name: Built In
+    sites:
+      United States: {url: 'https://builtin.com/jobs?search={q}'}
+    count_regex: ['([\d,]+)\s+(?:jobs?|results?)']
+
+  - id: reed
+    name: Reed
+    sites:
+      United Kingdom: {url: 'https://www.reed.co.uk/jobs/{slug}-jobs'}
+    fresh_param: '?dateCreatedOffSet=lastweek'
+    count_regex: ['([\d,]+)\s+[\w\s]{0,40}jobs?']
+
+  - id: totaljobs
+    name: Totaljobs
+    sites:
+      United Kingdom: {url: 'https://www.totaljobs.com/jobs/{slug}'}
+    fresh_param: '?postedWithin=7'
+    count_regex: ['([\d,]+)\s+(?:jobs?|results?)']
+
+  - id: stepstone
+    name: StepStone
+    sites:
+      Germany: {url: 'https://www.stepstone.de/jobs/{slug}'}
+    fresh_param: '?ag=age_7'
+    count_regex: ['([\d\.]+)\s+(?:Jobs|Stellenangebote)']
+
+  - id: jobs_ch
+    name: jobs.ch
+    sites:
+      Switzerland: {url: 'https://www.jobs.ch/en/vacancies/?term={q}'}
+    count_regex: ['([\d,'']+)\s+(?:jobs?|vacancies)']
+
+  - id: jobbank_ca
+    name: Job Bank (Govt of Canada)
+    sites:
+      Canada: {url: 'https://www.jobbank.gc.ca/jobsearch/jobsearch?searchstring={q}'}
+    fresh_param: '&fage=7'
+    count_regex: ['([\d,]+)\s+(?:jobs?|results?)']
+
+  - id: seek
+    name: Seek
+    sites:
+      Australia: {url: 'https://www.seek.com.au/{slug}-jobs'}
+      New Zealand: {url: 'https://www.seek.co.nz/{slug}-jobs'}
+    fresh_param: '?daterange=7'
+    count_regex: ['([\d,]+)\s+[\w\s]{0,40}jobs?']
+
+  - id: jobstreet
+    name: JobStreet
+    sites:
+      Singapore: {url: 'https://sg.jobstreet.com/{slug}-jobs'}
+      Malaysia: {url: 'https://my.jobstreet.com/{slug}-jobs'}
+      Philippines: {url: 'https://ph.jobstreet.com/{slug}-jobs'}
+      Indonesia: {url: 'https://id.jobstreet.com/{slug}-jobs'}
+    fresh_param: '?daterange=7'
+    count_regex: ['([\d,]+)\s+[\w\s]{0,40}jobs?']
+
+  - id: jobsdb
+    name: JobsDB
+    sites:
+      Hong Kong: {url: 'https://hk.jobsdb.com/{slug}-jobs'}
+      Thailand: {url: 'https://th.jobsdb.com/{slug}-jobs'}
+    fresh_param: '?daterange=7'
+    count_regex: ['([\d,]+)\s+[\w\s]{0,40}jobs?']
+
+  - id: bayt
+    name: Bayt
+    sites:
+      United Arab Emirates: {url: 'https://www.bayt.com/en/uae/jobs/{slug}-jobs/'}
+      Saudi Arabia: {url: 'https://www.bayt.com/en/saudi-arabia/jobs/{slug}-jobs/'}
+      Qatar: {url: 'https://www.bayt.com/en/qatar/jobs/{slug}-jobs/'}
+    count_regex: ['([\d,]+)\s+(?:jobs?|results?)']
+
+  - id: naukrigulf
+    name: Naukrigulf
+    sites:
+      United Arab Emirates: {url: 'https://www.naukrigulf.com/{slug}-jobs-in-uae'}
+    count_regex: ['of\s+([\d,]+)', '([\d,]+)\s+jobs?']
+
+  - id: pracuj
+    name: Pracuj.pl
+    sites:
+      Poland: {url: 'https://www.pracuj.pl/praca/{q};kw'}
+    count_regex: ['([\d\s]+)\s+(?:ofert|offers)']
+
+  - id: infojobs
+    name: InfoJobs
+    sites:
+      Spain: {url: 'https://www.infojobs.net/jobsearch/search-results/list.xhtml?keyword={q}'}
+    count_regex: ['([\d\.]+)\s+(?:ofertas|offers)']
+
+  - id: vagas
+    name: Vagas.com.br
+    sites:
+      Brazil: {url: 'https://www.vagas.com.br/vagas-de-{slug}'}
+    count_regex: ['([\d\.]+)\s+vagas']
+
+  - id: computrabajo
+    name: Computrabajo
+    sites:
+      Mexico: {url: 'https://mx.computrabajo.com/trabajo-de-{slug}'}
+      Colombia: {url: 'https://co.computrabajo.com/trabajo-de-{slug}'}
+    count_regex: ['([\d\.,]+)\s+(?:ofertas|empleos)']
+
+  - id: mycareersfuture
+    name: MyCareersFuture (Govt of Singapore)
+    sites:
+      Singapore: {url: 'https://www.mycareersfuture.gov.sg/search?search={q}'}
+    count_regex: ['([\d,]+)\s+(?:jobs?|results?)']

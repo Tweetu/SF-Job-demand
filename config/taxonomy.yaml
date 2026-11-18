@@ -1,0 +1,199 @@
+# Salesforce cloud taxonomy.
+# A posting is "Salesforce-relevant" if it matches any `relevance` pattern.
+# Each cloud is tagged if ANY of its patterns match (case-insensitive regex).
+# `needs_salesforce: true` = only tag if the posting is also Salesforce-relevant
+# (protects generic phrases like "Field Service" or "Data Cloud").
+
+relevance:
+  - '\bsalesforce\b'
+  - '\bsfdc\b'
+  - '\bagentforce\b'
+  - '\bomnistudio\b'
+  - '\bvlocity\b'
+  - '\bapex\b.{0,40}\b(trigger|class|developer|code)\b'
+  - '\blightning web components?\b'
+  - '\blwc\b'
+  - '\bvisualforce\b'
+  - '\btrailhead\b'
+  - '\bmulesoft\b'
+  - '\bcpq\b.{0,60}\bsalesforce\b|\bsalesforce\b.{0,60}\bcpq\b'
+
+# A Salesforce mention alone is NOT enough (sales reps "using Salesforce CRM" would flood the data).
+# A posting counts as ecosystem demand if:
+#   (a) its TITLE matches a title_signal, or
+#   (b) it mentions Salesforce AND its title is a technical role AND a specific cloud/platform tag matched.
+title_signals:
+  - 'salesforce|sfdc|\bcrm\b|mulesoft|vlocity|omnistudio|agentforce|\bapex\b|\blwc\b|\bcpq\b'
+  - '(sales|service|marketing|commerce|health|data|experience|revenue|financial services|manufacturing|communications|education|nonprofit|life sciences?) cloud'
+  - 'tableau|einstein|veeva crm'
+# Titles naming a competing CRM are excluded unless they also say Salesforce
+exclude_titles: 'oracle|\bsap\b|dynamics|d365|zoho|hubspot|siebel|servicenow|pega|freshworks'
+technical_roles: 'architect|developer|engineer|consultant|administrator|\badmin\b|analyst|specialist|lead|manager|tester|\bqa\b|programmer|technical'
+
+groups:
+  industries:
+    label: Industries Clouds
+  core:
+    label: Core Clouds
+  data_ai:
+    label: Data & AI
+  platform:
+    label: Platform & Family
+
+clouds:
+  # ---------------- Industries ----------------
+  financial_services_cloud:
+    label: Financial Services Cloud
+    group: industries
+    patterns: ['financial services cloud', '\bfsc\b']
+    needs_salesforce: true
+  health_cloud:
+    label: Health Cloud
+    group: industries
+    patterns: ['health ?cloud']
+    needs_salesforce: true
+  life_sciences_cloud:
+    label: Life Sciences Cloud
+    group: industries
+    patterns: ['life sciences? cloud']
+    needs_salesforce: true
+  manufacturing_cloud:
+    label: Manufacturing Cloud
+    group: industries
+    patterns: ['manufacturing cloud']
+    needs_salesforce: true
+  consumer_goods_cloud:
+    label: Consumer Goods Cloud
+    group: industries
+    patterns: ['consumer goods cloud']
+    needs_salesforce: true
+  communications_cloud:
+    label: Communications Cloud
+    group: industries
+    patterns: ['communications cloud', 'telecom(munications)? cloud']
+    needs_salesforce: true
+  energy_utilities_cloud:
+    label: Energy & Utilities Cloud
+    group: industries
+    patterns: ['energy (and|&) utilities cloud', 'e&u cloud']
+    needs_salesforce: true
+  media_cloud:
+    label: Media Cloud
+    group: industries
+    patterns: ['media cloud']
+    needs_salesforce: true
+  public_sector:
+    label: Public Sector Solutions
+    group: industries
+    patterns: ['public sector (solutions|cloud)']
+    needs_salesforce: true
+  automotive_cloud:
+    label: Automotive Cloud
+    group: industries
+    patterns: ['automotive cloud']
+    needs_salesforce: true
+  nonprofit_cloud:
+    label: Nonprofit Cloud
+    group: industries
+    patterns: ['non-?profit cloud', '\bnpsp\b']
+    needs_salesforce: true
+  education_cloud:
+    label: Education Cloud
+    group: industries
+    patterns: ['education cloud', '\beda\b.{0,30}salesforce']
+    needs_salesforce: true
+  net_zero_cloud:
+    label: Net Zero Cloud
+    group: industries
+    patterns: ['net zero cloud', 'sustainability cloud']
+    needs_salesforce: true
+  insurance:
+    label: Insurance (FSC/Industries)
+    group: industries
+    patterns: ['insurance cloud', 'salesforce.{0,40}insurance', 'insurance.{0,40}salesforce']
+    needs_salesforce: true
+  omnistudio:
+    label: OmniStudio / Vlocity (Industries tech)
+    group: industries
+    patterns: ['omnistudio', 'vlocity', 'flexcards?', 'omniscripts?', 'integration procedures?', 'dataraptors?']
+    needs_salesforce: false
+
+  # ---------------- Core ----------------
+  sales_cloud:
+    label: Sales Cloud
+    group: core
+    patterns: ['sales cloud']
+    needs_salesforce: true   # avoids "Oracle Sales Cloud"
+  service_cloud:
+    label: Service Cloud
+    group: core
+    patterns: ['service cloud']
+    needs_salesforce: true   # avoids "Oracle Service Cloud"
+  experience_cloud:
+    label: Experience Cloud
+    group: core
+    patterns: ['experience cloud', 'community cloud']
+    needs_salesforce: true
+  marketing_cloud:
+    label: Marketing Cloud
+    group: core
+    patterns: ['marketing cloud', '\bsfmc\b', 'pardot', 'account engagement']
+    needs_salesforce: true
+  commerce_cloud:
+    label: Commerce Cloud
+    group: core
+    patterns: ['commerce cloud', '\bsfcc\b', 'b2c commerce', 'b2b commerce']
+    needs_salesforce: true
+  field_service:
+    label: Field Service
+    group: core
+    patterns: ['field service lightning', '\bfsl\b', 'field service']
+    needs_salesforce: true
+  revenue_cloud:
+    label: Revenue Cloud / CPQ
+    group: core
+    patterns: ['revenue cloud', '\bcpq\b', 'salesforce billing']
+    needs_salesforce: true
+
+  # ---------------- Data & AI ----------------
+  data_cloud:
+    label: Data Cloud
+    group: data_ai
+    patterns: ['data cloud', 'data 360', '\bcdp\b']
+    needs_salesforce: true
+  agentforce:
+    label: Agentforce / Einstein
+    group: data_ai
+    patterns: ['agentforce', 'einstein (gpt|copilot|ai)', 'prompt builder']
+    needs_salesforce: true
+
+  # ---------------- Platform & family ----------------
+  platform_dev:
+    label: Platform Development (Apex/LWC)
+    group: platform
+    patterns: ['\bapex\b', '\blwc\b', 'lightning web components?', 'visualforce']
+    needs_salesforce: true
+  mulesoft:
+    label: MuleSoft
+    group: platform
+    patterns: ['mulesoft']
+  tableau:
+    label: Tableau / CRM Analytics
+    group: platform
+    patterns: ['\btableau\b', 'crm analytics', 'tableau crm', 'einstein analytics']
+    needs_salesforce: true
+  slack:
+    label: Slack Platform
+    group: platform
+    patterns: ['slack (platform|developer|api)']
+    needs_salesforce: true
+
+# Role-level tags (seniority/function), independent of cloud
+roles:
+  architect: ['architect']
+  developer: ['developer', 'engineer', '\bdev\b', 'programmer']
+  consultant: ['consultant', 'functional']
+  admin: ['administrator', '\badmin\b']
+  lead_manager: ['\blead\b', 'manager', 'head of', 'director', 'principal']
+  business_analyst: ['business analyst', '\bba\b']
+  qa: ['\bqa\b', 'tester', 'quality']

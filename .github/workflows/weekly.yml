@@ -1,0 +1,70 @@
+name: Weekly Salesforce job demand
+
+on:
+  schedule:
+    - cron: "17 1 * * 1"   # Mondays 01:17 UTC (06:47 IST)
+  workflow_dispatch:
+    inputs:
+      skip_portals:
+        description: "Skip job-portal counts (company feeds only)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: weekly-run
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Run pipeline
+        env:
+          PYTHONPATH: src
+        run: python -m sfjobs.pipeline ${{ inputs.skip_portals && '--skip-portals' || '' }}
+
+      - name: Save data to repo
+        if: always()
+        run: |
+          git config user.name "sf-jobs-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data reports
+          git diff --cached --quiet || git commit -m "Weekly data $(date -u +%G-W%V)"
+          git push
+
+      - name: Post weekly summary (emails you)
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create weekly-report --color 0b5cab --force || true
+          for n in $(gh issue list --label weekly-report --state open --json number -q '.[].number'); do
+            gh issue close "$n" || true
+          done
+          gh issue create --title "Salesforce job demand — $(date -u +%G-W%V)" \
+            --label weekly-report --body-file reports/summary.md
+
+      - name: Upload dashboard
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dashboard
+          path: reports/
+          retention-days: 90
