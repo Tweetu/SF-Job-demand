@@ -1,0 +1,303 @@
+name,domain,category,ats,token,method,status,checked_at
+3M,3m.com,customer_manufacturing,,,,not_found,2026-11-18
+7Summits,7summitsinc.com,partner,,,,not_found,2026-11-18
+AB InBev,ab-inbev.com,customer_cg,greenhouse,abinbev,slug_probe,ok,2026-11-18
+ABB,abb.com,customer_manufacturing,unsupported:phenom,,careers_page,unsupported,2026-11-18
+Abbott,abbott.com,customer_health,workday,abbott|wd5|abbottcareers,careers_page,ok,2026-11-18
+AbbVie,abbvie.com,customer_lifesci,smartrecruiters,abbvie,slug_probe,ok,2026-11-18
+Accenture,accenture.com,si_global,workday,accenture|wd103|AccentureCareers,careers_page,ok,2026-11-18
+Accenture Song,accenture.com,partner,workday,accenture|wd103|AccentureCareers,careers_page,ok,2026-11-18
+Ad Victoriam,advictoriam.com,partner,,,,not_found,2026-11-18
+Adidas,adidas-group.com,customer_retail,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Adobe,adobe.com,tech,unsupported:phenom,,careers_page,unsupported,2026-11-18
+Aflac,aflac.com,customer_fs,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+AIG,aig.com,customer_fs,workday,aig|wd1|aig,careers_page,broken,2026-11-18
+Airbnb,airbnb.com,tech,greenhouse,airbnb,slug_probe,ok,2026-11-18
+Algoworks,algoworks.com,partner,,,,not_found,2026-11-18
+Allianz,allianz.com,customer_fs,unsupported:phenom,,careers_page,unsupported,2026-11-18
+American Express,americanexpress.com,customer_fs,unsupported:eightfold,,careers_page,unsupported,2026-11-18
+American Red Cross,redcross.org,customer_nonprofit,workday,americanredcross|wd1|American_Red_Cross_Careers,careers_page,ok,2026-11-18
+Amgen,amgen.com,customer_lifesci,unsupported:eightfold,,careers_page,unsupported,2026-11-18
+ANZ,anz.com,customer_fs,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Apexon,apexon.com,partner,,,,not_found,2026-11-18
+Appirio,appirio.com,partner,,,,not_found,2026-11-18
+Arizona State University,asu.edu,customer_education,,,,not_found,2026-11-18
+Arkus,arkusinc.com,partner,,,,not_found,2026-11-18
+AstraZeneca,astrazeneca.com,customer_lifesci,unsupported:eightfold,,careers_page,unsupported,2026-11-18
+AT&T,att.com,customer_telecom,,,,not_found,2026-11-18
+Atlassian,atlassian.com,tech,,,,not_found,2026-11-18
+Atos,atos.net,si_global,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Atrium,atrium.ai,partner,,,,not_found,2026-11-18
+AXA,axa.com,customer_fs,unsupported:icims,,careers_page,unsupported,2026-11-18
+Axis Bank,axisbank.com,customer_fs,,,,not_found,2026-11-18
+Bajaj Finserv,bajajfinserv.in,customer_fs,,,,not_found,2026-11-18
+Bank of America,bankofamerica.com,customer_fs,unsupported:avature,,careers_page,unsupported,2026-11-18
+Barclays,barclays.com,customer_fs,,,,not_found,2026-11-18
+Bayer,bayer.com,customer_lifesci,workday,bayer|wd103|Bayer_External_Career_Site,careers_page,ok,2026-11-18
+Becton Dickinson,bd.com,customer_health,workday,bdx|wd1|EXTERNAL_CAREER_SITE_USA,careers_page,broken,2026-11-18
+Bell Canada,bce.ca,customer_telecom,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Bharti Airtel,airtel.in,customer_telecom,,,,not_found,2026-11-18
+Birlasoft,birlasoft.com,si_global,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+BlackRock,blackrock.com,customer_fs,,,,not_found,2026-11-18
+Bluewolf,bluewolf.com,partner,,,,not_found,2026-11-18
+BMW Group,bmwgroup.com,customer_automotive,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+BNP Paribas,bnpparibas.com,customer_fs,,,,not_found,2026-11-18
+Booz Allen Hamilton,boozallen.com,customer_public,workday,bah|wd1|BAH_Jobs,careers_page,ok,2026-11-18
+Bosch,bosch.com,customer_manufacturing,smartrecruiters,BoschGroup,careers_page,ok,2026-11-18
+Boston Scientific,bostonscientific.com,customer_health,unsupported:eightfold,,careers_page,unsupported,2026-11-18
+BP,bp.com,customer_energy,workday,bpinternational|wd3|bpCareers,careers_page,ok,2026-11-18
+Brex,brex.com,customer_fs,greenhouse,brex,slug_probe,ok,2026-11-18
+Bristol Myers Squibb,bms.com,customer_lifesci,workday,bristolmyerssquibb|wd5|BMS,careers_page,ok,2026-11-18
+Brite Systems,britesystems.com,partner,,,,not_found,2026-11-18
+BT Group,bt.com,customer_telecom,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+CACI,caci.com,customer_public,smartrecruiters,caci,slug_probe,ok,2026-11-18
+Capgemini,capgemini.com,si_global,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Capital One,capitalone.com,customer_fs,workday,capitalone|wd12|Capital_One,careers_page,ok,2026-11-18
+Caterpillar,caterpillar.com,customer_manufacturing,,,,not_found,2026-11-18
+Centene,centene.com,customer_health,workday,centene|wd5|centene_external,careers_page,ok,2026-11-18
+CGI,cgi.com,si_global,,,,not_found,2026-11-18
+Charles Schwab,schwab.com,customer_fs,greenhouse,charles,slug_probe,ok,2026-11-18
+Charter Communications,charter.com,customer_telecom,,,,not_found,2026-11-18
+Chubb,chubb.com,customer_fs,unsupported:oracle_cloud,,careers_page,unsupported,2026-11-18
+Cigna,thecignagroup.com,customer_health,workday,cigna|wd5|cignacareers,careers_page,broken,2026-11-18
+Cirrius Solutions,cirriussolutions.com,partner,,,,not_found,2026-11-18
+Citi,citigroup.com,customer_fs,workday,citi|wd5|2,careers_page,ok,2026-11-18
+Cleveland Clinic,clevelandclinic.org,customer_health,,,,not_found,2026-11-18
+Cloud Analogy,cloudanalogy.com,partner,,,,not_found,2026-11-18
+Cloud Giants,cloudgiants.com,partner,,,,not_found,2026-11-18
+Cloud Peritus,cloudperitus.com,partner,smartrecruiters,cloudperitus,slug_probe,ok,2026-11-18
+Cloud Sherpas,cloudsherpas.com,partner,,,,not_found,2026-11-18
+CloudSquare,cloudsquare.io,partner,,,,not_found,2026-11-18
+Cloudwerx,cloudwerx.co,partner,,,,not_found,2026-11-18
+Coastal Cloud,coastalcloud.us,partner,ashby,coastal,slug_probe,ok,2026-11-18
+Coca-Cola,coca-colacompany.com,customer_cg,,,,not_found,2026-11-18
+Coforge,coforge.com,si_global,,,,not_found,2026-11-18
+Cognizant,cognizant.com,si_global,,,,not_found,2026-11-18
+Cognizant Servian,servian.com,partner,,,,not_found,2026-11-18
+Coinbase,coinbase.com,tech,greenhouse,coinbase,slug_probe,ok,2026-11-18
+Colgate-Palmolive,colgatepalmolive.com,customer_cg,,,,not_found,2026-11-18
+Comcast,comcast.com,customer_telecom,workday,comcast|wd115|Comcast_Careers,careers_page,ok,2026-11-18
+Commonwealth Bank,commbank.com.au,customer_fs,workday,cba|wd3|CommBank_Careers,careers_page,ok,2026-11-18
+Conga,conga.com,tech,workday,apttus|wd5|External,careers_page,broken,2026-11-18
+Copado,copado.com,tech,,,,not_found,2026-11-18
+Coursera,coursera.org,customer_education,greenhouse,coursera,slug_probe,ok,2026-11-18
+Credera,credera.com,partner,,,,not_found,2026-11-18
+Customertimes,customertimes.com,partner,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+CVS Health,cvshealth.com,customer_health,unsupported:phenom,,careers_page,unsupported,2026-11-18
+Cyntexa,cyntexa.com,partner,,,,not_found,2026-11-18
+Damco Solutions,damcogroup.com,partner,,,,not_found,2026-11-18
+Danone,danone.com,customer_cg,,,,not_found,2026-11-18
+Databricks,databricks.com,tech,greenhouse,databricks,slug_probe,broken,2026-11-18
+DBS Bank,dbs.com,customer_fs,,,,not_found,2026-11-18
+Deere & Company,deere.com,customer_manufacturing,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Deloitte,deloitte.com,si_global,,,,not_found,2026-11-18
+Delta Air Lines,delta.com,customer_travel,unsupported:avature,,careers_page,unsupported,2026-11-18
+Deutsche Bank,db.com,customer_fs,,,,not_found,2026-11-18
+Deutsche Telekom,telekom.com,customer_telecom,unsupported:eightfold,,careers_page,unsupported,2026-11-18
+Diageo,diageo.com,customer_cg,workday,diageo|wd3|Diageo_Careers,careers_page,broken,2026-11-18
+DocuSign,docusign.com,tech,unsupported:icims,,careers_page,unsupported,2026-11-18
+Dr. Reddy's,drreddys.com,customer_lifesci,,,,not_found,2026-11-18
+Dropbox,dropbox.com,tech,greenhouse,dropbox,slug_probe,ok,2026-11-18
+Duke Energy,duke-energy.com,customer_energy,,,,not_found,2026-11-18
+DXC Technology,dxc.com,si_global,,,,not_found,2026-11-18
+e&,eand.com,customer_telecom,,,,not_found,2026-11-18
+E.ON,eon.com,customer_energy,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+EDF,edf.fr,customer_energy,,,,not_found,2026-11-18
+Elevance Health,elevancehealth.com,customer_health,workday,elevancehealth|wd1|ANT,careers_page,broken,2026-11-18
+Eli Lilly,lilly.com,customer_lifesci,,,,not_found,2026-11-18
+Emerson,emerson.com,customer_manufacturing,unsupported:oracle_cloud,,careers_page,unsupported,2026-11-18
+Emirates Group,emiratesgroupcareers.com,customer_travel,unsupported:avature,,careers_page,unsupported,2026-11-18
+Emirates NBD,emiratesnbd.com,customer_fs,,,,not_found,2026-11-18
+Endava,endava.com,si_global,smartrecruiters,endava,slug_probe,ok,2026-11-18
+Enel,enel.com,customer_energy,,,,not_found,2026-11-18
+EPAM Systems,epam.com,si_global,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Exelon,exeloncorp.com,customer_energy,unsupported:icims,,careers_page,unsupported,2026-11-18
+EY,ey.com,si_global,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Fidelity Investments,fidelity.com,customer_fs,,,,not_found,2026-11-18
+First Abu Dhabi Bank,bankfab.com,customer_fs,unsupported:oracle_cloud,,careers_page,unsupported,2026-11-18
+Five9,five9.com,tech,greenhouse,five9,slug_probe,ok,2026-11-18
+Ford,ford.com,customer_automotive,,,,not_found,2026-11-18
+Formstack,formstack.com,tech,ashby,Intellistack,careers_page,ok,2026-11-18
+Fujitsu,fujitsu.com,si_global,,,,not_found,2026-11-18
+Fusion Consulting,fusionconsulting.com,partner,smartrecruiters,fusionconsulting,slug_probe,ok,2026-11-18
+Gearset,gearset.com,tech,ashby,gearset,slug_probe,ok,2026-11-18
+General Dynamics IT,gdit.com,customer_public,workday,gdit|wd5|External_Career_Site,careers_page,ok,2026-11-18
+General Electric,ge.com,customer_manufacturing,greenhouse,general,slug_probe,ok,2026-11-18
+General Motors,gm.com,customer_automotive,greenhouse,general,slug_probe,ok,2026-11-18
+Genesys,genesys.com,tech,workday,genesys|wd1|Genesys,careers_page,ok,2026-11-18
+Genpact,genpact.com,si_global,workday,genpact|wd108|External_Careers,careers_page,ok,2026-11-18
+Gilead Sciences,gilead.com,customer_lifesci,workday,gilead|wd1|gileadcareers,careers_page,ok,2026-11-18
+Girikon,girikon.com,partner,,,,not_found,2026-11-18
+Globant,globant.com,si_global,,,,not_found,2026-11-18
+Goldman Sachs,goldmansachs.com,customer_fs,unsupported:avature,,careers_page,unsupported,2026-11-18
+Gong,gong.io,tech,smartrecruiters,gong,slug_probe,ok,2026-11-18
+Grazitti Interactive,grazitti.com,partner,,,,not_found,2026-11-18
+Grid Dynamics,griddynamics.com,si_global,,,,not_found,2026-11-18
+GSK,gsk.com,customer_lifesci,unsupported:phenom,,careers_page,unsupported,2026-11-18
+Guidehouse,guidehouse.com,customer_public,workday,guidehouse|wd1|External,careers_page,ok,2026-11-18
+HCA Healthcare,hcahealthcare.com,customer_health,,,,not_found,2026-11-18
+HCLTech,hcltech.com,si_global,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+HDFC Bank,hdfcbank.com,customer_fs,,,,not_found,2026-11-18
+Heineken,theheinekencompany.com,customer_cg,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Hexaware,hexaware.com,si_global,,,,not_found,2026-11-18
+Hilton,hilton.com,customer_travel,unsupported:oracle_cloud,,careers_page,unsupported,2026-11-18
+Hindustan Unilever,hul.co.in,customer_cg,,,,not_found,2026-11-18
+Home Depot,homedepot.com,customer_retail,,,,not_found,2026-11-18
+Honeywell,honeywell.com,customer_manufacturing,unsupported:oracle_cloud,,careers_page,unsupported,2026-11-18
+HSBC,hsbc.com,customer_fs,,,,not_found,2026-11-18
+HubSpot,hubspot.com,tech,,,,not_found,2026-11-18
+Humana,humana.com,customer_health,unsupported:phenom,,careers_page,unsupported,2026-11-18
+Huron,huronconsultinggroup.com,partner,workday,huron|wd1|huroncareers,careers_page,ok,2026-11-18
+Iberdrola,iberdrola.com,customer_energy,,,,not_found,2026-11-18
+IBM,ibm.com,si_global,,,,not_found,2026-11-18
+ICF,icf.com,customer_public,unsupported:phenom,,careers_page,unsupported,2026-11-18
+ICICI Bank,icicibank.com,customer_fs,,,,not_found,2026-11-18
+Infosys,infosys.com,si_global,,,,not_found,2026-11-18
+ING,ing.com,customer_fs,,,,not_found,2026-11-18
+IQVIA,iqvia.com,customer_lifesci,,,,not_found,2026-11-18
+ITC,itcportal.com,customer_cg,,,,not_found,2026-11-18
+Johnson & Johnson,jnj.com,customer_lifesci,workday,jj|wd5|JJ,careers_page,ok,2026-11-18
+JPMorgan Chase,jpmorganchase.com,customer_fs,unsupported:oracle_cloud,,careers_page,unsupported,2026-11-18
+Kaiser Permanente,kaiserpermanente.org,customer_health,unsupported:taleo,,careers_page,unsupported,2026-11-18
+Kimberly-Clark,kimberly-clark.com,customer_cg,smartrecruiters,kimberlyclark,slug_probe,ok,2026-11-18
+Kizzy Consulting,kizzyconsulting.com,partner,,,,not_found,2026-11-18
+Kotak Mahindra Bank,kotak.com,customer_fs,unsupported:oracle_cloud,,careers_page,unsupported,2026-11-18
+KPMG,kpmg.com,si_global,,,,not_found,2026-11-18
+Kraft Heinz,kraftheinzcompany.com,customer_cg,,,,not_found,2026-11-18
+Ksolves,ksolves.com,partner,,,,not_found,2026-11-18
+Kyndryl,kyndryl.com,si_global,workday,kyndryl|wd5|KyndrylEarlyCareers,careers_page,ok,2026-11-18
+L'Oreal,loreal.com,customer_cg,,,,not_found,2026-11-18
+Leidos,leidos.com,customer_public,,,,not_found,2026-11-18
+Liberty Mutual,libertymutual.com,customer_fs,unsupported:icims,,careers_page,unsupported,2026-11-18
+Lloyds Banking Group,lloydsbankinggroup.com,customer_fs,workday,lbg|wd3|lbg_Careers,careers_page,ok,2026-11-18
+Lowe's,lowes.com,customer_retail,unsupported:phenom,,careers_page,unsupported,2026-11-18
+LTIMindtree,ltimindtree.com,si_global,,,,not_found,2026-11-18
+Lucid Motors,lucidmotors.com,customer_automotive,greenhouse,lucidmotors,slug_probe,broken,2026-11-18
+LVMH,lvmh.com,customer_retail,smartrecruiters,lvmh,slug_probe,ok,2026-11-18
+Mahindra,mahindra.com,customer_automotive,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Marriott,marriott.com,customer_travel,unsupported:oracle_cloud,,careers_page,unsupported,2026-11-18
+Mavens,mavens.com,partner,greenhouse,komodohealth,careers_page,ok,2026-11-18
+Maximus,maximus.com,customer_public,unsupported:avature,,careers_page,unsupported,2026-11-18
+Mayo Clinic,mayoclinic.org,customer_health,unsupported:oracle_cloud,,careers_page,unsupported,2026-11-18
+Medtronic,medtronic.com,customer_health,,,,not_found,2026-11-18
+Mercedes-Benz,mercedes-benz.com,customer_automotive,,,,not_found,2026-11-18
+Merck,merck.com,customer_lifesci,workday,msd|wd5|SearchJobs,careers_page,broken,2026-11-18
+Merkle,merkle.com,partner,,,,not_found,2026-11-18
+MetLife,metlife.com,customer_fs,unsupported:avature,,careers_page,unsupported,2026-11-18
+Mirketa,mirketa.com,partner,,,,not_found,2026-11-18
+Moderna,modernatx.com,customer_lifesci,workday,modernatx|wd1|M_tx,careers_page,ok,2026-11-18
+Mondelez,mondelezinternational.com,customer_cg,,,,not_found,2026-11-18
+Morgan Stanley,morganstanley.com,customer_fs,,,,not_found,2026-11-18
+Mphasis,mphasis.com,si_global,,,,not_found,2026-11-18
+MuleSoft,mulesoft.com,vendor,,,,not_found,2026-11-18
+Nagarro,nagarro.com,partner,,,,not_found,2026-11-18
+National Grid,nationalgrid.com,customer_energy,greenhouse,national,slug_probe,ok,2026-11-18
+Nationwide,nationwide.com,customer_fs,workday,nationwide|wd1|Nationwide_Career,careers_page,broken,2026-11-18
+nCino,ncino.com,tech,,,,not_found,2026-11-18
+NEC,nec.com,si_global,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Nestle,nestle.com,customer_cg,,,,not_found,2026-11-18
+NextEra Energy,nexteraenergy.com,customer_energy,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Nike,nike.com,customer_retail,workday,nike|wd1|nke,careers_page,ok,2026-11-18
+Novartis,novartis.com,customer_lifesci,,,,not_found,2026-11-18
+Novo Nordisk,novonordisk.com,customer_lifesci,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+NTT Data,nttdata.com,si_global,workday,nttglobaldatacenters|wd501|External,careers_page,ok,2026-11-18
+Odaseva,odaseva.com,tech,lever,odaseva,careers_page,ok,2026-11-18
+Okta,okta.com,tech,greenhouse,okta,slug_probe,ok,2026-11-18
+Orange,orange.com,customer_telecom,unsupported:phenom,,careers_page,unsupported,2026-11-18
+OSF Digital,osf.digital,partner,,,,not_found,2026-11-18
+Outreach,outreach.io,tech,lever,outreach,slug_probe,ok,2026-11-18
+OwnBackup,ownbackup.com,tech,,,,not_found,2026-11-18
+Pearson,pearson.com,customer_education,unsupported:oracle_cloud,,careers_page,unsupported,2026-11-18
+PepsiCo,pepsico.com,customer_cg,unsupported:icims,,careers_page,unsupported,2026-11-18
+Peraton,peraton.com,customer_public,unsupported:icims,,careers_page,unsupported,2026-11-18
+Perficient,perficient.com,partner,,,,not_found,2026-11-18
+Persistent Systems,persistent.com,si_global,,,,not_found,2026-11-18
+Pfizer,pfizer.com,customer_lifesci,workday,pfizer|wd1|PfizerCareers,careers_page,ok,2026-11-18
+PG&E,pge.com,customer_energy,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Philips,philips.com,customer_health,unsupported:phenom,,careers_page,unsupported,2026-11-18
+Plaid,plaid.com,customer_fs,ashby,plaid,slug_probe,ok,2026-11-18
+Pracedo,pracedo.com,partner,,,,not_found,2026-11-18
+Procter & Gamble,pg.com,customer_cg,unsupported:phenom,,careers_page,unsupported,2026-11-18
+Provar,provartesting.com,tech,,,,not_found,2026-11-18
+Prudential Financial,prudential.com,customer_fs,,,,not_found,2026-11-18
+Publicis Sapient,publicissapient.com,si_global,unsupported:icims,,careers_page,unsupported,2026-11-18
+Purple Bricks Digital,pbd.digital,partner,greenhouse,purple,slug_probe,ok,2026-11-18
+PwC,pwc.com,si_global,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+RBC,rbc.com,customer_fs,unsupported:phenom,,careers_page,unsupported,2026-11-18
+Reliance Jio,jio.com,customer_telecom,,,,not_found,2026-11-18
+Rivian,rivian.com,customer_automotive,unsupported:icims,,careers_page,unsupported,2026-11-18
+Robinhood,robinhood.com,customer_fs,greenhouse,robinhood,slug_probe,ok,2026-11-18
+Roche,roche.com,customer_lifesci,unsupported:phenom,,careers_page,unsupported,2026-11-18
+Rockwell Automation,rockwellautomation.com,customer_manufacturing,,,,not_found,2026-11-18
+Rogers,rogers.com,customer_telecom,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Saasfocus,saasfocus.com,partner,,,,not_found,2026-11-18
+SAIC,saic.com,customer_public,,,,not_found,2026-11-18
+Salesforce,salesforce.com,vendor,workday,salesforce|wd12|External_Career_Site,override,ok,2026-11-18
+Sanofi,sanofi.com,customer_lifesci,,,,not_found,2026-11-18
+Santander,santander.com,customer_fs,workday,santander|wd3|SantanderCareers,careers_page,broken,2026-11-18
+Schneider Electric,se.com,customer_manufacturing,unsupported:taleo,,careers_page,unsupported,2026-11-18
+Scotiabank,scotiabank.com,customer_fs,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Sephora,sephora.com,customer_retail,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+ServiceNow,servicenow.com,tech,smartrecruiters,servicenow,slug_probe,ok,2026-11-18
+Shell,shell.com,customer_energy,,,,not_found,2026-11-18
+Shopify,shopify.com,tech,,,,not_found,2026-11-18
+Siemens,siemens.com,customer_manufacturing,,,,not_found,2026-11-18
+Silverline,silverlinecrm.com,partner,,,,not_found,2026-11-18
+Simplus,simplus.com,partner,,,,not_found,2026-11-18
+Singtel,singtel.com,customer_telecom,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Slack,slack.com,vendor,workday,salesforce|wd12|Slack,careers_page,ok,2026-11-18
+Slalom,slalom.com,partner,,,,not_found,2026-11-18
+Snowflake,snowflake.com,tech,ashby,snowflake,slug_probe,ok,2026-11-18
+Sopra Steria,soprasteria.com,si_global,smartrecruiters,SopraSteria1,careers_page,ok,2026-11-18
+Southern Company,southerncompany.com,customer_energy,,,,not_found,2026-11-18
+State Farm,statefarm.com,customer_fs,unsupported:icims,,careers_page,unsupported,2026-11-18
+Stellantis,stellantis.com,customer_automotive,,,,not_found,2026-11-18
+Strategic Growth Inc,strategicgrowthinc.com,partner,,,,not_found,2026-11-18
+Stripe,stripe.com,tech,greenhouse,stripe,slug_probe,broken,2026-11-18
+Stryker,stryker.com,customer_health,workday,stryker|wd1|StrykerCareers,careers_page,ok,2026-11-18
+Sun Pharma,sunpharma.com,customer_lifesci,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+T-Mobile,t-mobile.com,customer_telecom,workday,tmobile|wd1|External,careers_page,ok,2026-11-18
+Tableau,tableau.com,vendor,,,,not_found,2026-11-18
+Takeda,takeda.com,customer_lifesci,unsupported:avature,,careers_page,unsupported,2026-11-18
+Target,target.com,customer_retail,workday,target|wd5|targetcareers,careers_page,ok,2026-11-18
+Tata Consultancy Services,tcs.com,si_global,greenhouse,tcs,slug_probe,ok,2026-11-18
+Tata Motors,tatamotors.com,customer_automotive,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+TD Bank,td.com,customer_fs,,,,not_found,2026-11-18
+Tech Mahindra,techmahindra.com,si_global,,,,not_found,2026-11-18
+Telefonica,telefonica.com,customer_telecom,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Telstra,telstra.com.au,customer_telecom,workday,telstra|wd3|Telstra_Careers,careers_page,broken,2026-11-18
+Ten Fold,tenfold.com,partner,,,,not_found,2026-11-18
+Thoughtworks,thoughtworks.com,si_global,greenhouse,thoughtworks,slug_probe,ok,2026-11-18
+Toyota,toyota.com,customer_automotive,workday,toyota|wd503|TMNA,careers_page,ok,2026-11-18
+Tquila,tquila.com,partner,,,,not_found,2026-11-18
+Traction on Demand,tractionondemand.com,partner,,,,not_found,2026-11-18
+Travelers,travelers.com,customer_fs,,,,not_found,2026-11-18
+Twilio,twilio.com,tech,greenhouse,twilio,slug_probe,ok,2026-11-18
+U.S. Bank,usbank.com,customer_fs,workday,usbank|wd1|US_Bank_Careers,careers_page,ok,2026-11-18
+UBS,ubs.com,customer_fs,,,,not_found,2026-11-18
+UNICEF,unicef.org,customer_nonprofit,,,,not_found,2026-11-18
+Unilever,unilever.com,customer_cg,workday,unilever|wd3|Unilever_Experienced_Professionals,careers_page,broken,2026-11-18
+United Airlines,united.com,customer_travel,unsupported:phenom,,careers_page,unsupported,2026-11-18
+UnitedHealth Group,unitedhealthgroup.com,customer_health,unsupported:taleo,,careers_page,unsupported,2026-11-18
+University of Michigan,umich.edu,customer_education,,,,not_found,2026-11-18
+UST,ust.com,si_global,,,,not_found,2026-11-18
+Valtech,valtech.com,partner,greenhouse,valtech,slug_probe,ok,2026-11-18
+Vanguard,vanguard.com,customer_fs,,,,not_found,2026-11-18
+Veeva Systems,veeva.com,tech,lever,veeva,slug_probe,broken,2026-11-18
+Vera Solutions,verasolutions.org,partner,,,,not_found,2026-11-18
+Verizon,verizon.com,customer_telecom,,,,not_found,2026-11-18
+Virtusa,virtusa.com,si_global,unsupported:taleo,,careers_page,unsupported,2026-11-18
+Vodafone,vodafone.com,customer_telecom,,,,not_found,2026-11-18
+Volkswagen Group,volkswagen-group.com,customer_automotive,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Vonage,vonage.com,tech,greenhouse,vonage,slug_probe,ok,2026-11-18
+Walmart,walmart.com,customer_retail,,,,not_found,2026-11-18
+Wells Fargo,wellsfargo.com,customer_fs,,,,not_found,2026-11-18
+West Monroe,westmonroe.com,partner,greenhouse,westmonroe4,careers_page,ok,2026-11-18
+Westpac,westpac.com.au,customer_fs,unsupported:oracle_cloud,,careers_page,unsupported,2026-11-18
+Wipro,wipro.com,si_global,unsupported:successfactors,,careers_page,unsupported,2026-11-18
+Workday,workday.com,tech,workday,workday|wd5|Workday,careers_page,ok,2026-11-18
+World Wildlife Fund,worldwildlife.org,customer_nonprofit,,,,not_found,2026-11-18
+Wunderman Thompson,wundermanthompson.com,partner,,,,not_found,2026-11-18
+Zendesk,zendesk.com,tech,workday,zendesk|wd1|zendesk,careers_page,ok,2026-11-18
+Zensar,zensar.com,si_global,unsupported:oracle_cloud,,careers_page,unsupported,2026-11-18
+Zurich Insurance,zurich.com,customer_fs,unsupported:successfactors,,careers_page,unsupported,2026-11-18
